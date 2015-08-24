@@ -1,0 +1,37 @@
+#{set title:'Test' /}
+
+This is a test page
+
+<br>
+<br>
+
+Here is some text: ${var1}
+
+<br>
+<br>
+
+This is how you embed a controller action's URL in a page: <a href="@{Application.index}">Index</a>
+
+<form method="GET" action="@{Application.testAction}">
+
+    <input type="text" id="field.username" name="username" placeholder="Enter username" />
+    <input type="submit" value="Submit" />
+
+</form>
+
+<br>
+<br>
+
+This is where the flash error can be displayed if there is one:
+
+<br>
+
+#{if flash.get('error')}
+<span style="color:red;">${flash.get('error')}</span>
+#{/if}
+
+#{else}
+No Errors
+#{/else}
+
+#{if user}
