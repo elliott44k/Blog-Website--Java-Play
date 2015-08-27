@@ -3,6 +3,8 @@ package models;
 import models.base.BlogModel;
 
 import javax.persistence.Entity;
+import javax.persistence.OneToMany;
+import java.util.List;
 
 /**
  * Created by kyleareanraines on 8/24/15.
@@ -24,6 +26,10 @@ public class BlogUser extends BlogModel {
 
         return firstName + " " + lastName;
     }
+
+    @OneToMany(mappedBy = "bloguser_id")
+    public List<BlogEntry> blogEntries;
+}
 
     public BlogUser findByUsername() {
         // TODO: implement
