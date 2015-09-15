@@ -29,16 +29,15 @@ public class BlogUser extends BlogModel {
 
     @OneToMany(mappedBy = "bloguser_id")
     public List<BlogEntry> blogEntries;
-}
 
-    public BlogUser findByUsername() {
-        // TODO: implement
-        // return find("JPQL query goes here").first();
-
-        return getEntityManager().createQuery("select u from BlogUser u " +
-                                            "where u.username = :username")
-                                            .setParameter("username", :username)
-                                            .setMaxResults(1)
-                                            .getResultList();
-    }
+//    public BlogUser findByUsername() {
+//        // TODO: implement
+//        // return find("JPQL query goes here").first();
+//
+//        return getEntityManager().createQuery("select u from BlogUser u " +
+//                                            "where u.username = :username")
+//                                            .setParameter("username", :username)
+//                                            .setMaxResults(1)
+//                                            .getResultList();
+//    }
 }

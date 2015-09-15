@@ -8,21 +8,14 @@ import javax.persistence.MappedSuperclass;
 
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Parameter;
-import org.hibernate.engine.SessionImplementor;
-
+import org.hibernate.engine.spi.SessionImplementor;
 import play.db.jpa.GenericModel;
+import play.db.jpa.Model;
 
 @MappedSuperclass
-public class BlogModel extends GenericModel {
+public class BlogModel extends Model {
 
     @Id
-    @GeneratedValue(generator="BlogModelGenerator")
-    @GenericGenerator(name="BlogModelGenerator",
-    		strategy="blog.data.BlogModelIdGenerator",
-    		parameters={
-    		    @Parameter(name="sequence_name", value="hibernate_sequence"),
-    		    @Parameter(name="increment_size", value="1")
-    		})
     public Long id;
     
     public Long getId() {

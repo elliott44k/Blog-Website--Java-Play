@@ -11,6 +11,8 @@ import java.util.List;
 /**
  * Created by Elliott on 8/27/15.
  */
+
+@Entity
 public class Comment extends BlogModel{
     public String comment;
     public String Date;
@@ -20,6 +22,5 @@ public class Comment extends BlogModel{
         Date = dateFormat.format(new Date());
     }
 
-    @ManyToOne(mappedBy = "blogEntry_id")
     public List<Comment> comments;
 }
