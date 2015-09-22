@@ -1,4 +1,19 @@
 #{extends 'main.html' /}
 #{set title:'Home' /}
 
-#{welcome /}
+<div class="center jumbotron">
+    <h1>Welcome to the Sample Blog Site</h1>
+
+    <h2>
+        What do you mean all the blogs are show up together?
+    </h2>
+
+    #{if user} Hello, ${user.username}!
+    ${user.email} is your email address
+    ${user.getFullName()} is your full name
+    #{/if}
+
+    <span#{if !user} style="display:none;"#{/if}>SPAN TEXT</span>
+    #{if user}><span>SPAN TEXT</span>#{/if}
+
+</div>

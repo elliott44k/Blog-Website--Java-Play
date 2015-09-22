@@ -5,6 +5,10 @@
 # Home page
 GET     /                                       Application.index
 
+# App Pages
+GET   /testPage.html                            staticFile:/app/views/Application/testPage.html
+GET   /contact.html                             Application.contact
+
 # Ignore favicon requests
 GET     /favicon.ico                            404
 
