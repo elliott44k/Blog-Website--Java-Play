@@ -1,0 +1,14 @@
+#{extends 'main.html' /}
+#{set title:'Login' /}
+
+<div class="center jumbotron">
+    <h1>Login</h1>
+
+    <form action="@{Application.loginSumbit}" method="post">
+        Username:<input type="text" name="username"/><br><br/>
+        Password:<input type="password" name="password"/><br><br/>
+        <input type="submit" value="register"/>"
+    </form>
+
+
+</div>

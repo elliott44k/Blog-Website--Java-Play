@@ -1,0 +1,32 @@
+#{extends 'main.html' /}
+#{set title:'Register' /}
+
+<div class="center jumbotron">
+    <h1>Contact</h1>
+    <p>
+        If you're seeing this application, you should know how to contact me :)
+    </p>
+</div>
+
+<form action="@{Application.registerSubmit}" method="post">
+    First Name:<input type="text" name="firstName"/><br><br/>
+    Last Name:<input type="text" name="lastName"/><br><br/>
+    Username:<input type="text" name="username"/><br><br/>
+    Password:<input type="password" name="password"/><br><br/>
+    Email ID:<input type="text" name="email"/><br><br/>
+    <input type="submit" value="register"/>"
+
+</form>
+
+*{register.jsp}*
+*{<%@page import="com.javatpoint.mypack.UserDao"%>}*
+*{<jsp:useBean id="obj" class="com.javatpoint.mypack.User">}*
+*{</jsp:useBean>}*
+*{<jsp:setProperty property="*" name="obj"/>}*
+
+*{<%}*
+*{int i=UserDao.register(obj);}*
+*{if(i>0)}*
+*{out.print("You are successfully registered");}*
+
+*{%>}*

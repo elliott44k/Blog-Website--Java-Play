@@ -1,22 +1,92 @@
 package controllers;
 
-import play.*;
-import play.data.validation.Validation;
-import play.mvc.*;
-
 import java.util.*;
 
 import models.*;
+import play.data.validation.Validation;
+import play.mvc.Controller;
+import javax.persistence.*;
 
 /**
  * This is the controller that will be used for all actions related to the blog
  */
 
+//Render looks for template with the method name.html and sends to browser
+
 public class Application extends Controller {
 
     public static void index() {
+        BlogUser user = null;
+        Long userId = Long.valueOf(session.get("loggedInUser"));
+        if (userId != null) { user = BlogUser.findById(userId); }
+
+        render(user);
+    }
+
+    public static void contact() { render(); }
+
+
+    //registration page
+    public static void register() {
         render();
     }
+
+    public static void registerSubmit(String firstName, String lastName, String username, String password, String email) {
+
+        if (BlogUser.count("username = ?", username) > 0) {
+            //flash (message name in template, message)
+            flash("error","Username already taken");
+            register();
+        }
+
+        BlogUser user = new BlogUser(firstName, lastName, username, password, email);
+
+        //persists the entity in the database
+        user.save();
+        session.put("loggedInUser", user.id);
+        //session.get will return null or the userid if someone is logged in
+
+
+
+
+
+//        if (BlogUser.find("username = ?", username).first() != null)
+        //last call in the method
+        index();
+        //redirect("Application.index");
+    }
+
+    public static void login(){
+        render();
+    }
+
+    public static void loginSubmit(String username, String password){
+//        BlogUser bu = null;
+//        Query query = select blogUser.username from BlogUser blogUser where blogUser.username like username
+
+
+    }
+
+   public static void entrySubmit(String username, String post) {
+       if (session.isEmpty()) {
+           flash("error", "Not logged in");
+           login();
+       }
+       BlogEntry blog = new BlogEntry(username, post);
+       blog.save();
+       index();
+   }
+
+
+
+
+
+
+
+
+
+
+
 
     public static void testPage() {
         String var1 = "TEST TEXT";
