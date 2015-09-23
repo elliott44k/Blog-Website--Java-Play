@@ -21,6 +21,10 @@
         return this.optional(element) || /[0-9]+/.test(value);
     }, "Must have at least one number");
 
+
+    /**
+     * Validate Password
+     */
     $(document).ready(function() {
 
         $('input[type=password]').keyup(function () {
@@ -31,7 +35,6 @@
                     password: {
                         required: true,
                         minlength: 6,
-                        maxlength: 10,
                         atLeastOneUppercaseLetter: true,
                         atLeastOneNumber: true,
 
@@ -42,6 +45,9 @@
 
     });
 
+    /**
+     * validate form inputs
+     */
     function validateForm() {
         var a = document.forms["Myform"]["firstName"].value;
         var b = document.forms["Myform"]["lastName"].value;

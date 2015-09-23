@@ -1,10 +1,31 @@
 #{extends 'main.html' /}
 #{set title:'Login' /}
 
+<script>
+    /**
+     * validate login inputs exist
+     */
+
+    function validateForm() {
+        var a = document.forms["Myform"]["username"].value;
+        var b = document.forms["Myform"]["password"].value;
+        if (a == null || a == "") {
+            alert("Username must be entered");
+            return false;
+        }
+
+        if (b == null || b == "") {
+            alert("Password must be entered");
+            return false;
+        }
+    }
+</script>
+
+
 <div class="center jumbotron">
     <h1>Login</h1>
     <legend></legend>
-    <form class="form-inline" action="@{Application.loginSubmit}" method="post">
+    <form class="form-inline" onsubmit="return validateForm()" id="Myform" action="@{Application.loginSubmit}" method="post">
         <div class="form-group-sm">
             <label class="control-label" for="username">Username: </label>
             <input type="text" name="username" class="form-control" placeholder="Username"/>

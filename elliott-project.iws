@@ -2,78 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bfcdad40-c2ed-4e73-b011-7c5b7af5912a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/antlr-2.7.7.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.ProjectDocumentation" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.Register" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/dom4j-1.6.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/bootstrap/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/bootstrap/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/bootstrap/glyphicons-halflings-regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/bootstrap/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/helpers.CheatSheetHelper$4" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/helpers.LangMenuHelper$1" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/helpers.LangMenuHelper$LangMenu" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/helpers.LangMenuHelper" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/hibernate-commons-annotations-4.0.2.Final.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/hibernate-core-4.2.2.Final.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/hibernate-jpa-2.0-api-1.0.1.Final.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javassist-3.15.0-GA.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javax.annotation.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javax.ejb.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javax.jms.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javax.persistence.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javax.resource.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javax.servlet.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javax.servlet.jsp.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javax.servlet.jsp.jstl.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javax.transaction.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/jboss-logging-3.1.0.GA.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/jboss-transaction-api_1.1_spec-1.0.1.Final.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/models.BlogEntry" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/models.Comment" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/Register.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_Application_contact.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_Application_index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_Application_login.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_main.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_tags_footer.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_tags_header.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_play__framework_templates_tags_welcome.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_play__framework_templates_tags_welcome_en.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/stylesheets/bootstrap/bootstrap-theme.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/stylesheets/bootstrap/bootstrap-theme.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/stylesheets/bootstrap/bootstrap-theme.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/stylesheets/bootstrap/bootstrap.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/stylesheets/bootstrap/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/javascripts/bootstrap/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/stylesheets/bootstrap/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/javascripts/bootstrap/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/tags/footer.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/bootstrap/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/tags/header.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/javascripts/jquery.validate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/Application/myHome.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/javascripts/bootstrap/npm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/META-INF/orm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/classes/controllers/Application.class" afterPath="$PROJECT_DIR$/tmp/classes/controllers/Application.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/classes/models/base/BlogModel.class" afterPath="$PROJECT_DIR$/tmp/classes/models/base/BlogModel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/classes/models/BlogUser.class" afterPath="$PROJECT_DIR$/tmp/classes/models/BlogUser.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.Application" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.Application" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/models.BlogUser" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/models.BlogUser" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/models.base.BlogModel" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/models.base.BlogModel" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/Application.java" afterPath="$PROJECT_DIR$/app/controllers/Application.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/base/BlogModel.java" afterPath="$PROJECT_DIR$/app/models/base/BlogModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/BlogUser.java" afterPath="$PROJECT_DIR$/app/models/BlogUser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Comment.java" afterPath="$PROJECT_DIR$/app/models/Comment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/Application/contact.html" afterPath="$PROJECT_DIR$/app/views/Application/contact.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_Application_login.html" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_Application_login.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/elliott-project.iws" afterPath="$PROJECT_DIR$/elliott-project.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/Application/index.html" afterPath="$PROJECT_DIR$/app/views/Application/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/Application/login.html" afterPath="$PROJECT_DIR$/app/views/Application/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/main.css" afterPath="$PROJECT_DIR$/public/stylesheets/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/main.html" afterPath="$PROJECT_DIR$/app/views/main.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/Application/register.html" afterPath="$PROJECT_DIR$/app/views/Application/register.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/routes" afterPath="$PROJECT_DIR$/conf/routes" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/Application/testPage.html" afterPath="$PROJECT_DIR$/app/views/Application/testPage.html" />
     </list>
     <ignored path="elliott-project.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -95,6 +27,24 @@
       <content type="file-editors">
         <state>
           <leaf>
+            <file leaf-file-name="register.html" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/app/views/Application/register.html">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state vertical-scroll-proportion="0.28333333">
+                    <caret line="64" column="9" selection-start-line="64" selection-start-column="9" selection-end-line="64" selection-end-column="9" />
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
             <file leaf-file-name="BlogUser.java" pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/app/models/BlogUser.java">
                 <provider selected="true" editor-type-id="text-editor">
@@ -111,8 +61,8 @@
             <file leaf-file-name="BlogModel.java" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/app/models/base/BlogModel.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state vertical-scroll-proportion="0.31772575">
-                    <caret line="19" column="51" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
+                  <state vertical-scroll-proportion="0.26755852">
+                    <caret line="16" column="45" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
                     <folding>
                       <element signature="imports" expanded="true" />
                       <element signature="e#990#991#0" expanded="true" />
@@ -173,22 +123,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/Application/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.625">
-              <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="70" />
+            <state vertical-scroll-proportion="0.38248336">
+              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="register.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/Application/register.html">
+      <file leaf-file-name="jquery.validate.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/jquery.validate.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.20177384">
-              <caret line="74" column="5" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
-              <folding />
+            <state vertical-scroll-proportion="-10.518518">
+              <caret line="304" column="23" selection-start-line="304" selection-start-column="23" selection-end-line="304" selection-end-column="82" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -259,7 +211,6 @@
         <option value="$PROJECT_DIR$/app/views/tags/header.html" />
         <option value="$PROJECT_DIR$/public/stylesheets/bootstrap/bootstrap.css" />
         <option value="$PROJECT_DIR$/public/stylesheets/main.css" />
-        <option value="$PROJECT_DIR$/app/views/Application/login.html" />
         <option value="$PROJECT_DIR$/app/views/Application/index.html" />
         <option value="$PROJECT_DIR$/app/views/Application/contact.html" />
         <option value="$PROJECT_DIR$/app/views/Application/testPage.html" />
@@ -267,6 +218,7 @@
         <option value="$PROJECT_DIR$/app/views/main.html" />
         <option value="$PROJECT_DIR$/public/javascripts/jquery.validate.js" />
         <option value="$PROJECT_DIR$/app/views/Application/register.html" />
+        <option value="$PROJECT_DIR$/app/views/Application/login.html" />
       </list>
     </option>
   </component>
@@ -286,7 +238,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1680" />
+    <option name="width" value="840" />
     <option name="height" value="1023" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -1069,7 +1021,7 @@
       <workItem from="1442948297105" duration="82000" />
       <workItem from="1442948468154" duration="511000" />
       <workItem from="1442949353854" duration="525000" />
-      <workItem from="1442949920991" duration="15064000" />
+      <workItem from="1442949920991" duration="16514000" />
     </task>
     <task id="LOCAL-00001" summary="First">
       <created>1440649907354</created>
@@ -1101,11 +1053,17 @@
       <option name="project" value="LOCAL" />
       <updated>1442951334805</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Register page validation working! :)">
+      <created>1442984939592</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1442984939592</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52663000" />
+    <option name="totallyTimeSpent" value="54113000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -1117,7 +1075,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="1023" extended-state="0" />
+    <frame x="0" y="23" width="840" height="1023" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1138,7 +1096,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13511905" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2702381" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28825995" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1168,7 +1126,8 @@
     <MESSAGE value="Trying to get initial render&#10;" />
     <MESSAGE value="Working on DB models" />
     <MESSAGE value="Getting entity manager running again" />
-    <option name="LAST_COMMIT_MESSAGE" value="Getting entity manager running again" />
+    <MESSAGE value="Register page validation working! :)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Register page validation working! :)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1404,18 +1363,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/base/BlogModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31772575">
-          <caret line="19" column="51" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#990#991#0" expanded="true" />
-            <element signature="e#1008#1009#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/conf/routes">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1554,7 +1501,35 @@
         <state vertical-scroll-proportion="-2.2222223">
           <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/Application/testPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.875">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.375">
+          <caret line="7" column="138" selection-start-line="7" selection-start-column="138" selection-end-line="7" selection-end-column="138" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/base/BlogModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26755852">
+          <caret line="16" column="45" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#990#991#0" expanded="true" />
+            <element signature="e#1008#1009#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1567,44 +1542,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/Application/testPage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.875">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/Application/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.625">
-          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/jquery.validate.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.017201835">
-          <caret line="304" column="23" selection-start-line="304" selection-start-column="23" selection-end-line="304" selection-end-column="23" />
+        <state vertical-scroll-proportion="-10.518518">
+          <caret line="304" column="23" selection-start-line="304" selection-start-column="23" selection-end-line="304" selection-end-column="82" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/main.html">
+    <entry file="file://$PROJECT_DIR$/app/views/Application/register.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.375">
-          <caret line="7" column="138" selection-start-line="7" selection-start-column="138" selection-end-line="7" selection-end-column="138" />
+        <state vertical-scroll-proportion="0.28333333">
+          <caret line="64" column="9" selection-start-line="64" selection-start-column="9" selection-end-line="64" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/Application/register.html">
+    <entry file="file://$PROJECT_DIR$/app/views/Application/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20177384">
-          <caret line="74" column="5" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.38248336">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
       </provider>
