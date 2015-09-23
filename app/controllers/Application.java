@@ -17,8 +17,8 @@ public class Application extends Controller {
 
     public static void index() {
         BlogUser user = null;
-        Long userId = Long.valueOf(session.get("loggedInUser"));
-        if (userId != null) { user = BlogUser.findById(userId); }
+//        Long userId = Long.valueOf(session.get("loggedInUser"));
+//        if (userId != null) { user = BlogUser.findById(userId); }
 
         render(user);
     }
@@ -61,7 +61,7 @@ public class Application extends Controller {
     }
 
     public static void loginSubmit(String username, String password){
-//        BlogUser bu = null;
+        BlogUser bu = null;
 //        Query query = select blogUser.username from BlogUser blogUser where blogUser.username like username
 
 
@@ -79,7 +79,9 @@ public class Application extends Controller {
 
 
 
-
+    public static void myHome() {
+        render();
+    }
 
 
 
@@ -96,15 +98,15 @@ public class Application extends Controller {
     public static void testAction(String username) {
         if (username == null || username.equals("")) {
             flash("error", "This is an error message that you can access in the page");
-            renderTemplate("testPage.html");
+            testPage();
         }
         BlogUser user = BlogUser.find("username = ?", username) != null ? (BlogUser)BlogUser.find("username = ?", username).first() : null;
         if (user == null) {
             Validation.addError("field.username", "User not found. Wrong username?");
         }
         if (Validation.hasErrors()) {
-            renderTemplate("testPage");
+            testPage();
         }
-        renderTemplate("testPage");
+        testPage();
     }
 }

@@ -1,32 +1,117 @@
 #{extends 'main.html' /}
 #{set title:'Register' /}
 
+<script>
+
+    $.validator.addMethod("noCaps", function(value, element) {
+        return this.optional(element) || (value.match(/[a-zA-Z]/));
+    }, 'At least 1 capital letter is required.');
+
+    /**
+     * Custom validator for contains at least one upper-case letter.
+     */
+    $.validator.addMethod("atLeastOneUppercaseLetter", function (value, element) {
+        return this.optional(element) || /[A-Z]+/.test(value);
+    }, "Must have at least one uppercase letter");
+
+    /**
+     * Custom validator for contains at least one number.
+     */
+    $.validator.addMethod("atLeastOneNumber", function (value, element) {
+        return this.optional(element) || /[0-9]+/.test(value);
+    }, "Must have at least one number");
+
+    $(document).ready(function() {
+
+        $('input[type=password]').keyup(function () {
+            var password = $(this).val();
+            $("#Myform").validate({
+                wrapper: 'div',
+                rules: {
+                    password: {
+                        required: true,
+                        minlength: 6,
+                        maxlength: 10,
+                        atLeastOneUppercaseLetter: true,
+                        atLeastOneNumber: true,
+
+                    } ,
+                },
+            });
+        });
+
+    });
+
+    function validateForm() {
+        var a = document.forms["Myform"]["firstName"].value;
+        var b = document.forms["Myform"]["lastName"].value;
+        var c = document.forms["Myform"]["username"].value;
+        var d = document.forms["Myform"]["password"].value;
+        var e = document.forms["Myform"]["email"].value;
+        if (a == null || a == "") {
+            alert("First name must be filled out");
+            return false;
+        }
+
+        if (b == null || b == "") {
+            alert("Last name must be filled out");
+            return false;
+        }
+
+        if (c == null || c == "") {
+            alert("Username must be filled out");
+            return false;
+        }
+
+        if (d == null || d == "") {
+            alert("Password must be filled out");
+            return false;
+        }
+
+        if (e == null || e == "") {
+            alert("Email must be filled out");
+            return false;
+        }
+    }
+
+</script>
+
+
 <div class="center jumbotron">
-    <h1>Contact</h1>
-    <p>
-        If you're seeing this application, you should know how to contact me :)
-    </p>
+    <h1>Register</h1>
+    <legend></legend>
+
+    <form class="form-inline" id="Myform" onsubmit="return validateForm()" action="@{Application.registerSubmit}" method="post">
+        <div class="form-group-sm">
+            <label class="control-label" for="firstName">First Name: </label>
+            <input type="text" name="firstName" class="form-control" placeholder="First Name"/>
+        </div>
+        <br>
+
+        <div class="form-group-sm">
+            <label class="control-label" for="lastName">Last Name: </label>
+            <input type="text" name="lastName" class="form-control" placeholder="Last Name"/>
+        </div>
+        <br>
+
+        <div class="form-group-sm">
+            <label class="control-label" for="username">Username: </label>
+            <input type="text" name="username" class="form-control" placeholder="Username"/>
+        </div>
+        <br>
+
+        <div class="form-group-sm">
+            <label class="control-label" for="password">Password: </label>
+            <input type="password" name="password" class="form-control" placeholder="Password"/>
+        </div>
+        <br>
+
+        <div class="form-group-sm">
+            <label class="control-label" for="email">Email: </label>
+            <input type="email" name="email" class="form-control" placeholder="Email"/>
+        </div>
+        <br>
+
+        <button type="submit" id="submit" class="btn" value="register">Register</button>
+    </form>
 </div>
-
-<form action="@{Application.registerSubmit}" method="post">
-    First Name:<input type="text" name="firstName"/><br><br/>
-    Last Name:<input type="text" name="lastName"/><br><br/>
-    Username:<input type="text" name="username"/><br><br/>
-    Password:<input type="password" name="password"/><br><br/>
-    Email ID:<input type="text" name="email"/><br><br/>
-    <input type="submit" value="register"/>"
-
-</form>
-
-*{register.jsp}*
-*{<%@page import="com.javatpoint.mypack.UserDao"%>}*
-*{<jsp:useBean id="obj" class="com.javatpoint.mypack.User">}*
-*{</jsp:useBean>}*
-*{<jsp:setProperty property="*" name="obj"/>}*
-
-*{<%}*
-*{int i=UserDao.register(obj);}*
-*{if(i>0)}*
-*{out.print("You are successfully registered");}*
-
-*{%>}*

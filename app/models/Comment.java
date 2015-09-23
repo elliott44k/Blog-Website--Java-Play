@@ -1,6 +1,8 @@
 package models;
 
 import models.base.BlogModel;
+import org.hibernate.annotations.Generated;
+import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 import java.text.SimpleDateFormat;

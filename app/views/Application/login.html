@@ -3,12 +3,19 @@
 
 <div class="center jumbotron">
     <h1>Login</h1>
-
-    <form action="@{Application.loginSumbit}" method="post">
-        Username:<input type="text" name="username"/><br><br/>
-        Password:<input type="password" name="password"/><br><br/>
-        <input type="submit" value="register"/>"
+    <legend></legend>
+    <form class="form-inline" action="@{Application.loginSubmit}" method="post">
+        <div class="form-group-sm">
+            <label class="control-label" for="username">Username: </label>
+            <input type="text" name="username" class="form-control" placeholder="Username"/>
+        </div>
+        <br>
+        <div class="form-group-sm">
+            <label class="control-label" for="password">Password: </label>
+            <input type="password" name="password" class="form-control" placeholder="Password"/>
+        </div>
+        <br>
+        <button type="submit" class="btn" value="login">Login</button>
     </form>
-
 
 </div>

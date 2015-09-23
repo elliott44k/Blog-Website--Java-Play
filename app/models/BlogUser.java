@@ -22,7 +22,7 @@ public class BlogUser extends BlogModel {
     //instance variables
     @Id
     @Column(nullable = false)
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.TABLE)
     public Long id;
 
     public String firstName;

@@ -6,8 +6,13 @@
 GET     /                                       Application.index
 
 # App Pages
-GET   /testPage.html                            staticFile:/app/views/Application/testPage.html
+GET   /testPage.html                            Application.testPage
 GET   /contact.html                             Application.contact
+GET   /register.html                            Application.register
+GET   /login.html                               Application.login
+GET   /myHome.html                              Application.myHome
+
+# Commands
 
 # Ignore favicon requests
 GET     /favicon.ico                            404

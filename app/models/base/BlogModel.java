@@ -3,6 +3,7 @@ package models.base;
 import java.io.Serializable;
 
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 
@@ -16,13 +17,13 @@ import play.db.jpa.GenericModel;
 public class BlogModel extends GenericModel {
 
     @Id
-    @GeneratedValue(generator="BlogModelGenerator")
-    @GenericGenerator(name="BlogModelGenerator",
-    		strategy="blog.data.BlogModelIdGenerator",
-    		parameters={
-    		    @Parameter(name="sequence_name", value="hibernate_sequence"),
-    		    @Parameter(name="increment_size", value="1")
-    		})
+	@GeneratedValue(strategy = GenerationType.AUTO)
+//    @GenericGenerator(name="BlogModelGenerator",
+//    		strategy="blog.data.BlogModelIdGenerator",
+//    		parameters={
+//    		    @Parameter(name="sequence_name", value="hibernate_sequence"),
+//    		    @Parameter(name="increment_size", value="1")
+//    		})
     public Long id;
     
     public Long getId() {
