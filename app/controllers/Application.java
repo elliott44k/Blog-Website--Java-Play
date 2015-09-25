@@ -1,8 +1,12 @@
 package controllers;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintStream;
 import java.util.*;
 
 import models.*;
+import org.hibernate.exception.DataException;
 import play.data.validation.Validation;
 import play.mvc.Controller;
 import javax.persistence.*;
@@ -31,7 +35,7 @@ public class Application extends Controller {
         render();
     }
 
-    public static void registerSubmit(String firstName, String lastName, String username, String password, String email) {
+    public static void registerSubmit(String firstName, String lastName, String username, String password, String email) throws FileNotFoundException {
 
         if (BlogUser.count("username = ?", username) > 0) {
             //flash (message name in template, message)
@@ -42,18 +46,20 @@ public class Application extends Controller {
         BlogUser user = new BlogUser(firstName, lastName, username, password, email);
 
         //persists the entity in the database
-        user.save();
+        try {
+            user.save();
+        }
+        catch (PersistenceException e) {
+            File file = new File("testsalotofthem.txt");
+            PrintStream ps = new PrintStream(file);
+            e.printStackTrace(ps);
+        }
         session.put("loggedInUser", user.id);
         //session.get will return null or the userid if someone is logged in
 
-
-
-
-
-//        if (BlogUser.find("username = ?", username).first() != null)
+        if (BlogUser.find("username = ?", username).first() != null)
         //last call in the method
         index();
-        //redirect("Application.index");
     }
 
     public static void login(){

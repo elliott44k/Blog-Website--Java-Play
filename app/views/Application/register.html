@@ -53,7 +53,8 @@
         var b = document.forms["Myform"]["lastName"].value;
         var c = document.forms["Myform"]["username"].value;
         var d = document.forms["Myform"]["password"].value;
-        var e = document.forms["Myform"]["email"].value;
+        var e = document.forms["Myform"]["passwordCfm"].value;
+        var f = document.forms["Myform"]["email"].value;
         if (a == null || a == "") {
             alert("First name must be filled out");
             return false;
@@ -74,7 +75,17 @@
             return false;
         }
 
-        if (e == null || e == "") {
+        if (e == null || d == "") {
+            alert("Password Confirmation must be filled out");
+            return false;
+        }
+
+        if (d != e) {
+            alert("Passwords are not the same");
+            return false;
+        }
+
+        if (f == null || f == "") {
             alert("Email must be filled out");
             return false;
         }
@@ -88,32 +99,38 @@
     <legend></legend>
 
     <form class="form-inline" id="Myform" onsubmit="return validateForm()" action="@{Application.registerSubmit}" method="post">
-        <div class="form-group-sm">
-            <label class="control-label" for="firstName">First Name: </label>
+        <div style="margin-right: 5px">
+            <label class="control-label" for="firstName">First Name:</label>
             <input type="text" name="firstName" class="form-control" placeholder="First Name"/>
         </div>
         <br>
 
-        <div class="form-group-sm">
-            <label class="control-label" for="lastName">Last Name: </label>
+        <div style="margin-right: 4px">
+            <label class="control-label" for="lastName">Last Name:</label>
             <input type="text" name="lastName" class="form-control" placeholder="Last Name"/>
         </div>
         <br>
 
-        <div class="form-group-sm">
-            <label class="control-label" for="username">Username: </label>
+        <div>
+            <label class="control-label" for="username">Username:</label>
             <input type="text" name="username" class="form-control" placeholder="Username"/>
         </div>
         <br>
 
-        <div class="form-group-sm">
-            <label class="control-label" for="password">Password: </label>
+        <div style="margin-right: -2px">
+            <label class="control-label" for="password">Password:</label>
             <input type="password" name="password" class="form-control" placeholder="Password"/>
         </div>
         <br>
 
-        <div class="form-group-sm">
-            <label class="control-label" for="email">Email: </label>
+        <div style="margin-right: 40px">
+            <label class="control-label" for="password">Password Verify: </label>
+            <input type="password" name="passwordCfm" class="form-control" placeholder="Password Verification"/>
+        </div>
+        <br>
+
+        <div style="margin-right: -32px">
+            <label class="control-label" for="email">Email:</label>
             <input type="email" name="email" class="form-control" placeholder="Email"/>
         </div>
         <br>

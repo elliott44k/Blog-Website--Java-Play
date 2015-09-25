@@ -18,12 +18,12 @@ public class BlogModel extends GenericModel {
 
     @Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-//    @GenericGenerator(name="BlogModelGenerator",
-//    		strategy="blog.data.BlogModelIdGenerator",
-//    		parameters={
-//    		    @Parameter(name="sequence_name", value="hibernate_sequence"),
-//    		    @Parameter(name="increment_size", value="1")
-//    		})
+    @GenericGenerator(name="BlogModelGenerator",
+    		strategy="blog.data.BlogModelIdGenerator",
+    		parameters={
+    		    @Parameter(name="sequence_name", value="hibernate_sequence"),
+    		    @Parameter(name="increment_size", value="1")
+    		})
     public Long id;
     
     public Long getId() {

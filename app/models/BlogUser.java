@@ -38,6 +38,7 @@ public class BlogUser extends BlogModel {
     @Column(nullable = false)
     public String email;
 
+
     //class constructor
 
     public BlogUser(String fName, String lName, String uName, String pWord, String email1) {
@@ -48,20 +49,19 @@ public class BlogUser extends BlogModel {
         email = email1;
     }
 
+    public BlogUser() {
+    }
+
     public String getFullName() {
         return firstName + " " + lastName;
     }
-//
-//    @OneToMany(mappedBy = "bloguser_id")
+
+//    @OneToMany(mappedBy = "id")
+//    public List<BlogEntry> blogEntries;
 
 //    public BlogUser findByUsername() {
 //        // TODO: implement
-//        // return find("JPQL query goes here").first();
-//
-//        return getEntityManager().createQuery("select u from BlogUser u " +
-//                                            "where u.username = :username")
-//                                            .setParameter("username", :username)
-//                                            .setMaxResults(1)
-//                                            .getResultList();
+//        BlogUser bu = null;
+//        return bu;
 //    }
 }
